@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1743453797787" clover="3.2.0">
+  <project timestamp="1743453797787" name="All files">
+    <metrics statements="117" coveredstatements="114" conditionals="71" coveredconditionals="55" methods="40" coveredmethods="39" elements="228" coveredelements="208" complexity="0" loc="117" ncloc="117" packages="1" files="3" classes="3"/>
+    <file name="App.jsx" path="C:\Users\schio\mpp\src\App.jsx">
+      <metrics statements="65" coveredstatements="62" conditionals="34" coveredconditionals="26" methods="26" coveredmethods="25"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="8" count="56" type="stmt"/>
+      <line num="147" count="56" type="stmt"/>
+      <line num="148" count="56" type="stmt"/>
+      <line num="149" count="56" type="stmt"/>
+      <line num="150" count="56" type="stmt"/>
+      <line num="151" count="56" type="stmt"/>
+      <line num="152" count="56" type="stmt"/>
+      <line num="153" count="56" type="stmt"/>
+      <line num="154" count="56" type="stmt"/>
+      <line num="155" count="56" type="stmt"/>
+      <line num="158" count="56" type="stmt"/>
+      <line num="159" count="841" type="stmt"/>
+      <line num="162" count="56" type="cond" truecount="2" falsecount="0"/>
+      <line num="164" count="30" type="stmt"/>
+      <line num="166" count="56" type="stmt"/>
+      <line num="167" count="2187" type="cond" truecount="2" falsecount="0"/>
+      <line num="168" count="1938" type="cond" truecount="1" falsecount="1"/>
+      <line num="171" count="249" type="cond" truecount="2" falsecount="0"/>
+      <line num="172" count="127" type="cond" truecount="2" falsecount="0"/>
+      <line num="175" count="122" type="cond" truecount="1" falsecount="1"/>
+      <line num="176" count="122" type="cond" truecount="2" falsecount="0"/>
+      <line num="180" count="0" type="stmt"/>
+      <line num="184" count="56" type="stmt"/>
+      <line num="185" count="56" type="stmt"/>
+      <line num="186" count="56" type="stmt"/>
+      <line num="187" count="56" type="stmt"/>
+      <line num="190" count="56" type="stmt"/>
+      <line num="193" count="56" type="stmt"/>
+      <line num="194" count="3" type="stmt"/>
+      <line num="199" count="3" type="stmt"/>
+      <line num="200" count="3" type="stmt"/>
+      <line num="201" count="3" type="stmt"/>
+      <line num="205" count="56" type="stmt"/>
+      <line num="206" count="1" type="stmt"/>
+      <line num="207" count="1" type="stmt"/>
+      <line num="208" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="211" count="1" type="stmt"/>
+      <line num="212" count="1" type="stmt"/>
+      <line num="216" count="56" type="stmt"/>
+      <line num="217" count="3" type="stmt"/>
+      <line num="218" count="45" type="stmt"/>
+      <line num="219" count="3" type="cond" truecount="2" falsecount="2"/>
+      <line num="220" count="0" type="stmt"/>
+      <line num="222" count="3" type="stmt"/>
+      <line num="227" count="841" type="stmt"/>
+      <line num="229" count="56" type="stmt"/>
+      <line num="241" count="2" type="stmt"/>
+      <line num="242" count="2" type="stmt"/>
+      <line num="251" count="2" type="stmt"/>
+      <line num="252" count="2" type="stmt"/>
+      <line num="257" count="504" type="stmt"/>
+      <line num="272" count="3" type="stmt"/>
+      <line num="273" count="3" type="stmt"/>
+      <line num="286" count="5" type="stmt"/>
+      <line num="287" count="5" type="stmt"/>
+      <line num="301" count="9" type="stmt"/>
+      <line num="302" count="9" type="stmt"/>
+      <line num="325" count="3" type="stmt"/>
+      <line num="326" count="3" type="stmt"/>
+      <line num="335" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="342" count="162" type="stmt"/>
+      <line num="343" count="162" type="stmt"/>
+      <line num="345" count="2" type="stmt"/>
+      <line num="354" count="1" type="cond" truecount="1" falsecount="1"/>
+    </file>
+    <file name="MovieForm.jsx" path="C:\Users\schio\mpp\src\MovieForm.jsx">
+      <metrics statements="47" coveredstatements="47" conditionals="37" coveredconditionals="29" methods="10" coveredmethods="10"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="42" type="stmt"/>
+      <line num="5" count="42" type="stmt"/>
+      <line num="6" count="42" type="stmt"/>
+      <line num="7" count="42" type="stmt"/>
+      <line num="8" count="42" type="stmt"/>
+      <line num="9" count="42" type="stmt"/>
+      <line num="10" count="42" type="stmt"/>
+      <line num="13" count="42" type="stmt"/>
+      <line num="14" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="19" count="3" type="stmt"/>
+      <line num="20" count="3" type="stmt"/>
+      <line num="25" count="42" type="stmt"/>
+      <line num="26" count="7" type="stmt"/>
+      <line num="27" count="7" type="cond" truecount="1" falsecount="1"/>
+      <line num="28" count="7" type="cond" truecount="3" falsecount="1"/>
+      <line num="29" count="7" type="cond" truecount="1" falsecount="1"/>
+      <line num="30" count="7" type="cond" truecount="4" falsecount="1"/>
+      <line num="31" count="7" type="cond" truecount="4" falsecount="0"/>
+      <line num="32" count="3" type="stmt"/>
+      <line num="34" count="7" type="stmt"/>
+      <line num="35" count="7" type="stmt"/>
+      <line num="39" count="42" type="stmt"/>
+      <line num="40" count="7" type="stmt"/>
+      <line num="41" count="7" type="cond" truecount="2" falsecount="0"/>
+      <line num="43" count="4" type="stmt"/>
+      <line num="52" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="53" count="1" type="stmt"/>
+      <line num="55" count="3" type="stmt"/>
+      <line num="59" count="4" type="stmt"/>
+      <line num="60" count="4" type="stmt"/>
+      <line num="61" count="4" type="stmt"/>
+      <line num="62" count="4" type="stmt"/>
+      <line num="63" count="4" type="stmt"/>
+      <line num="64" count="4" type="stmt"/>
+      <line num="65" count="4" type="stmt"/>
+      <line num="68" count="42" type="stmt"/>
+      <line num="76" count="7" type="stmt"/>
+      <line num="88" count="5" type="stmt"/>
+      <line num="101" count="5" type="stmt"/>
+      <line num="123" count="4" type="stmt"/>
+      <line num="136" count="2" type="stmt"/>
+      <line num="146" count="2" type="stmt"/>
+    </file>
+    <file name="MovieList.jsx" path="C:\Users\schio\mpp\src\MovieList.jsx">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="54" type="stmt"/>
+      <line num="8" count="252" type="stmt"/>
+      <line num="28" count="3" type="stmt"/>
+      <line num="34" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>

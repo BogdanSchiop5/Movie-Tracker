@@ -1,0 +1,213 @@
+/* InfiniteMovieView.css */
+.infinite-scroll-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 900px;
+    height: 80%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    overflow: hidden;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.infinite-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.infinite-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #212529;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.close-button:hover {
+    color: #dc3545;
+}
+
+.infinite-scroll-stats {
+    padding: 10px 20px;
+    color: #6c757d;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.infinite-movie-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 15px;
+}
+
+.infinite-movie-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.infinite-movie-content {
+    flex: 1;
+}
+
+.infinite-movie-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #343a40;
+    font-size: 1.2rem;
+}
+
+.infinite-movie-details {
+    color: #6c757d;
+}
+
+.infinite-movie-details p {
+    margin: 5px 0;
+}
+
+.infinite-movie-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.infinite-edit-button,
+.infinite-delete-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.infinite-edit-button {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.infinite-edit-button:hover {
+    background-color: #138496;
+}
+
+.infinite-delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.infinite-delete-button:hover {
+    background-color: #c82333;
+}
+
+.infinite-loading {
+    text-align: center;
+    padding: 15px;
+    color: #6c757d;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.infinite-end-message {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.infinite-no-movies {
+    text-align: center;
+    padding: 30px;
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+.infinite-offline-badge {
+    font-size: 0.7rem;
+    background-color: #ff9800;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Overlay behind the modal */
+.infinite-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    animation: fadeOverlay 0.3s ease-out;
+}
+
+@keyframes fadeOverlay {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Custom scrollbar for the movie list */
+.infinite-movie-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.infinite-movie-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.infinite-movie-list::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.infinite-movie-list::-webkit-scrollbar-thumb:hover {
+    background: #a1a1a1;
+}
