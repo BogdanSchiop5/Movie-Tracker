@@ -7,9 +7,19 @@ const app = express();
 const corsOptions = {
     origin: '*', // Allow all origins
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'Origin', 'X-Requested-With'],
+    credentials: true,
     optionsSuccessStatus: 200
 };
+
+// Add to your server code
+app.get('/health', (req, res) => {
+    res.status(200).json({
+        status: 'healthy',
+        timestamp: new Date().toISOString(),
+        online: true
+    });
+});
 
 app.use(cors(corsOptions));
 
@@ -320,7 +330,7 @@ let movies = [
         genre: 'Biography',
         rating: 9,
         review: 'A wild ride through excess and corruption in finance.',
-        image: 'https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_.jpg'
+        image: 'https://m.media-amazon.com/images/M/MV5BMTc0NzAxODAyMl5BMl5BanBnXkFtZTgwMDg0MzQ4MDE@._V1_.jpg'
     },
     {
         id: 30,
@@ -595,11 +605,6 @@ app.listen(PORT, HOST, (err) => {
     console.log(`\nServer is running on:`);
     console.log(`- Local: http://localhost:${PORT}`);
     console.log(`- Network: http://${HOST}:${PORT}`);
-    
-    console.log('\nTo access from other devices on your network, you may need to:');
-    console.log('1. Allow Node.js through Windows Firewall');
-    console.log('2. Configure your antivirus to allow incoming connections to Node.js');
-    console.log('3. Make sure your network profile is set to "Private" in Windows');
 });
 
 module.exports = app;

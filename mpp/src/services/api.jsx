@@ -1,4 +1,9 @@
-const API_URL = 'http://localhost:3000/movies';
+const getApiBaseUrl = () => {
+    return `http://${window.location.hostname}:3000`;
+};
+
+const API_URL = getApiBaseUrl();
+
 const OFFLINE_STORAGE_KEY = 'offline_movie_operations';
 const HEALTH_CHECK_URL = 'http://localhost:3000/health';
 
